@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : largest.c
+ Name        : alphabet_or_not.c
  Author      : mooody
  Version     :
  Copyright   : Your copyright notice
@@ -11,26 +11,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-
-	float a,b,c ;
-
-	printf("Enter 3 Number:");
+int main() {
+	char c ;
+	printf("Enter A Character To Check :" );
 	fflush(stdout);
-	scanf("%f""%f""%f",&a,&b,&c);
-
-	if(a>b)
-	{ if(a>c)
-		printf("%f Is the largest Num",a);
+	scanf("%c",&c);
+	if(c>='A'&& c<='Z')
+		printf("The Character %c Is Alphabet",c);
 	else
-		printf("%f Is the largest Num",c);
-	}
+		printf("The Character %c Is Not Alphabet",c);
 
-	if(b>a)
-		{ if(b>c)
-			printf("%f Is the largest Num",b);
-		else
-			printf("%f Is the largest Num",c);
-		}
-
+	return 0;
 }

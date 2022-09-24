@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : largest.c
+ Name        : sum_of_nutural_number.c
  Author      : mooody
  Version     :
  Copyright   : Your copyright notice
@@ -11,26 +11,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-
-	float a,b,c ;
-
-	printf("Enter 3 Number:");
+int main() {
+	int n ,count , sum=0 ;
+	printf("Enter An Integer :" );
 	fflush(stdout);
-	scanf("%f""%f""%f",&a,&b,&c);
+	scanf("%d",&n);
 
-	if(a>b)
-	{ if(a>c)
-		printf("%f Is the largest Num",a);
-	else
-		printf("%f Is the largest Num",c);
+	for(count=1; count<=n; count++)
+	{
+		sum+=count;
 	}
 
-	if(b>a)
-		{ if(b>c)
-			printf("%f Is the largest Num",b);
-		else
-			printf("%f Is the largest Num",c);
-		}
-
+	printf("The Sum Is %d :",sum );
+	return 0;
 }

@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : largest.c
+ Name        : factorial_number.c
  Author      : mooody
  Version     :
  Copyright   : Your copyright notice
@@ -11,26 +11,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-
-	float a,b,c ;
-
-	printf("Enter 3 Number:");
+int main() {
+	int n, count ,fact=1 ;
+	printf("Enter An Integer :" );
 	fflush(stdout);
-	scanf("%f""%f""%f",&a,&b,&c);
+	scanf("%d",&n);
 
-	if(a>b)
-	{ if(a>c)
-		printf("%f Is the largest Num",a);
-	else
-		printf("%f Is the largest Num",c);
+	for(count=1; count<=n; count++)
+	{
+		fact*=count;
 	}
+	printf("The Factorial Number Is %d :",fact );
 
-	if(b>a)
-		{ if(b>c)
-			printf("%f Is the largest Num",b);
-		else
-			printf("%f Is the largest Num",c);
-		}
-
+	return 0;
 }
